@@ -1,15 +1,8 @@
 import React, {Component} from 'react';
-import './App.css';
-import {Content} from "./component/Content/Content";
+import c from './Header.module.css';
+import {Content} from "../Content/Content";
 
-const PLACES = [
-    { name: "Moscow", zip: "2122265" },
-    { name: "London", zip: "44418" },
-    { name: "San Francisco", zip: "2487956" },
-    { name: "St Petersburg", zip: "2123260" }
-];
-
-class App extends Component {
+ class Header extends Component{
     constructor() {
         super();
         this.state = {
@@ -40,6 +33,5 @@ class App extends Component {
         );
     }
 }
+connect(mapStateToProps, mapDispatchToProps)(MyPosts)
 
-
-export default App;
