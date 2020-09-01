@@ -38,23 +38,5 @@ class App extends Component {
         );
     }
 }
-    // <div className="App">
-    //     {PLACES.map((place, index) => (
-    //         <button
-    //             key={index}
-    //             onClick={() => {
-    //                 this.setState({ activePlace: index });
-    //             }}
-    //         >
-    //             {place.name}
-    //         </button>
-    //     ))}
-    //     <Content
-    //         key={activePlace}
-    //         zip={PLACES[activePlace].zip}
-    //         gettingWeather={this.gettingWeather}
-    //     />
-    // </div>
-
 
 export default App;
