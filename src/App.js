@@ -16,7 +16,6 @@ class App extends Component {
             activePlace: 0,
         };
     }
-
     render() {
         const activePlace = this.state.activePlace;
         return (
@@ -25,7 +24,7 @@ class App extends Component {
                     <button
                         key={index}
                         onClick={() => {
-                            this.setState({ activePlace: index });
+                            this.setState({ activePlace: index});
                         }}
                     >
                         {place.name}
@@ -34,12 +33,28 @@ class App extends Component {
                 <Content
                     key={activePlace}
                     zip={PLACES[activePlace].zip}
-                    gettingWeather={this.gettingWeather}
                 />
             </div>
         );
     }
 }
+    // <div className="App">
+    //     {PLACES.map((place, index) => (
+    //         <button
+    //             key={index}
+    //             onClick={() => {
+    //                 this.setState({ activePlace: index });
+    //             }}
+    //         >
+    //             {place.name}
+    //         </button>
+    //     ))}
+    //     <Content
+    //         key={activePlace}
+    //         zip={PLACES[activePlace].zip}
+    //         gettingWeather={this.gettingWeather}
+    //     />
+    // </div>
 
 
 export default App;
